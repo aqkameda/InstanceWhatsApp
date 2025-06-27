@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GREEN-API Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-section">
+        <input id="idInstance" placeholder="idInstance" />
+        <input id="apiTokenInstance" placeholder="ApiTokenInstance" />
+        <button id="getSettings">getSettings</button>
+        <button id="getStateInstance">getStateInstance</button>
+        <input id="chatIdMsg" placeholder="77771234567" />
+        <textarea id="message" placeholder="Hello World!"></textarea>
+        <button id="sendMessage">sendMessage</button>
+        <input id="chatIdFile" placeholder="77771234567" />
+        <input id="urlFile" placeholder="https://my.site.com/img/horse.png" />
+        <button id="sendFileByUrl">sendFileByUrl</button>
+      </div>
+      <div class="response-section">
+        <label>Ответ:</label>
+        <pre id="response" readonly></pre>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
