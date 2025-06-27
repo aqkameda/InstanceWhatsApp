@@ -18,16 +18,20 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+  align-self: stretch;
+  min-height: 520px;
 }
 #response {
   background: #f4f4f4;
   border: 1px solid #ccc;
-  min-height: 300px;
+  min-height: 100%;
+  height: 100%;
   padding: 10px;
   font-family: monospace;
   font-size: 14px;
   overflow-x: auto;
   white-space: pre-wrap;
+  box-sizing: border-box;
 }
 input,
 textarea,
@@ -54,4 +58,19 @@ button:hover {
   .response-section {
     min-width: 0;
   }
+}
+#apiTokenInstance {
+  margin-bottom: 60px;
+}
+#getSettings {
+  margin-bottom: 40px;
+}
+#getStateInstance {
+  margin-bottom: 60px;
+}
+#sendMessage {
+  margin-bottom: 60px;
+}
+#sendFileByUrl {
+  margin-bottom: 20px;
 }
